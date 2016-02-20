@@ -17,6 +17,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+
 # =========================
 # Operating System Files
 # =========================
@@ -44,4 +45,27 @@ $RECYCLE.BIN/
 .AppleDesktop
 Network Trash Folder
 Temporary Items
-.apdisk
+*.apdisk
+*.meta
+Library
+ProjectSettings
+*.vs
+*.sln
+*.csproj
+*.mat
+Standard Assets
+alduin_animaitions_.C4D
+Audio
+Editor
+Features
+Finished_Units
+Materials
+Prefabs
+Scenes
+SkyBox Volume 2
+Textures
+Stabdard Assets
+Tree_Textures
+*.asset
+*.bin
+*.info
