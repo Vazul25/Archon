@@ -55,20 +55,20 @@ namespace  AStar
         /// </summary>
         /// <param name="title">A descriptive title</param>
         /// <param name="path">The points that comprise the path</param>
-        /*     private void ShowRoute(string title, IEnumerable<Point> path)
+            /*public static void ShowRoute(string title, IEnumerable<Point> path)
              {
                  Console.WriteLine("{0}\r\n", title);
-                 for (int y = this.map.GetLength(1) - 1; y >= 0 ; y--) // Invert the Y-axis so that coordinate 0,0 is shown in the bottom-left
+                 for (int y =  map.GetLength(1) - 1; y >= 0 ; y--) // Invert the Y-axis so that coordinate 0,0 is shown in the bottom-left
                  {
-                     for (int x = 0; x < this.map.GetLength(0); x++)
+                     for (int x = 0; x <  map.GetLength(0); x++)
                      {
-                         if (this.searchParameters.StartLocation.Equals(new Point(x, y)))
+                         if ( searchParameters.StartLocation.Equals(new Point(x, y)))
                              // Show the start position
                              Console.Write('S');
-                         else if (this.searchParameters.EndLocation.Equals(new Point(x, y)))
+                         else if ( searchParameters.EndLocation.Equals(new Point(x, y)))
                              // Show the end position
                              Console.Write('F');
-                         else if (this.map[x, y] == false)
+                         else if ( map[x, y] == false)
                              // Show any barriers
                              Console.Write('X');
                          else if (path.Where(p => p.X == x && p.Y == y).Any())
@@ -81,7 +81,8 @@ namespace  AStar
 
                      Console.WriteLine();
                  }
-             }*/
+             }
+             */
         public static List<Point> FindPath(Point startLocation, Point finLocation, bool diagonal = false  )
         {
             searchParameters = new SearchParameters(startLocation, finLocation, map);
@@ -126,5 +127,6 @@ namespace  AStar
 
              map[x, y] = true;
         }
+
     }
 }
