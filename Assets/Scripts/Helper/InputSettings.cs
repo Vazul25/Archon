@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 //using System.Collections.Generic;
 
+/// <summary>
+///  </summary>
+public static class InputSettings
+{
+ 
 
-public static class InputSettings {
-    //temporary sollution util i can find a better, would be less code with dictionary, but harder calls
-    // Use this for initialization
-   
     public static string P1_action1Button = "P1_Act1";
     public static string P1_action2Button = "P1_Act2";
     public static string P1_upButton = "P1_Up";
@@ -62,6 +63,6 @@ public static class InputSettings {
         Debug.Log("Tag mismatch in inputSettings " + tag);
         return "";
     }
- 
+
 
 }
